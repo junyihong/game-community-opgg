@@ -1,0 +1,18 @@
+/* Reset */
+@import "reset.css";
+/* Components */
+@import "components/nav.css";
+
+
+/* Screens */
+
+
+
+
+
+
+/* variables */
+:root{
+    --blue : rgb(83,131,232);
+    --space : 8px 12px;
+}
