@@ -1,13 +1,59 @@
-.index__content {
-    background-color: #ebeef1;
-    overflow: hidden;
+.index__body{
+    position: relative;
 }
 .index__main {
     padding: 40px 0 90px;
 }
-
-@media only screen and (max-width : 1024px){
+.index__contentBox {
+    background-color: #33383c;
+    overflow: hidden;
+}
+.index__content{
+    position: relative;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.game__list__item {
+    float: left;
+    margin-left: 16px;
+    margin-top: 16px;
+    width: 514px;
+    height: 240px;
+    overflow: hidden;
+}
+.game__background{
+    width: 530px;
+    height: 240px;
+    background-size: cover;
+    background-position: 50%;
+}
+.game__background::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent, #000000);
+    content: "";
+}
+@media only screen and (max-width : 1075px){
     .index__main{
-      padding : 18px 16px 80px;
+        padding : 18px 16px 80px;
+    }
+    .game__list {
+        margin-top: 16px;
+        margin-left: -10px;
+    }
+    .game__list__item{
+        width: 100%;
+        margin-top: 16px;
+        color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .game__background{
+        width: 100%;
+        height: 200px;
     }
 }
