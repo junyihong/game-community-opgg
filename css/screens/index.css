@@ -1,0 +1,13 @@
+.index__content {
+    background-color: #ebeef1;
+    overflow: hidden;
+}
+.index__main {
+    padding: 40px 0 90px;
+}
+
+@media only screen and (max-width : 1024px){
+    .index__main{
+      padding : 18px 16px 80px;
+    }
+}

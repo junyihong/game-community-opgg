@@ -1,71 +1,114 @@
 #nav-bar{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--blue);
-    padding: 8px 12px;
+    background-color: rgb(40,52,78);
 }
 #nav__logo {
+    background-color: var(--blue);
     font-size: 20px;
-    width: 110px;
-    min-width: 130px;
+    min-width: 140px;
     font-weight: 700;
     color: white;
     white-space: nowrap;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: var(--space);
 }
 #logo__span1{
-    margin-right: 12px;
+    margin: 0 8px;
+    position: relative;
+    top:-2px;
+    cursor: pointer;
 }
-#nav__lists{
-    width: 85%;
+#logo__span2{
+    padding-right: 12px;
+    position: relative;
+    top:-2px;
+    cursor: pointer;
+}
+.nav__lists{
+    width: 83%;
+    height: 40px;
+    padding: var(--space);
     display: flex;
     justify-content: flex-start;
     padding-left: 0px;
 }
-#nav__lists li {
-padding: var(--space);
+.nav__lists div {
+padding: 10px 6px 0 6px;
+margin: 0 5px;
+border-radius: 10px;
 font-size: 15px;
 color: white;
 font-weight: 700;
 }
-#nav__icons {
-    min-width: 150px;
+.nav__lists div:hover{
+    background-color: rgb(39, 64, 119);
+}
+.nav__icons {
+    min-width: 180px;
+    height: 40px;
     display: flex;
     padding-left: 0;
     white-space: nowrap;
 }
-#nav__icons li{
-    padding: var(--space);
+.nav__icons li{
+    padding: 8px 6px 0 6px;
+    border-radius: 10px;
+    margin: 0 5px;
     color: white;
     font-weight: 700;
+}
+.nav__icons li:hover{
+    background-color: rgb(39, 64, 119);
 }
 #nav_toggle {
     display: none;
     position: absolute;
-    right: 10px;
-    top: 30px;
-    font-size: 24px;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
 }
 @media screen and (max-width: 850px) {
     #nav-bar{
+        position: sticky;
         flex-direction: column;
+        background-color: var(--blue);
+        min-height: 40px;
     }
-    #nav__logo{
-        padding: 20px 0px;
-    }
-    #nav__lists{
+    .nav__lists{
+        background-color: var(--dark);
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 20px 0;
+        height: 140px;
+        padding-top: 20px;
         display: none;
     }
-    #nav__icons{
+    .nav__lists div {
+        padding: 5px 10px;
+        margin: 3px;
+    }
+    .nav__icons{
+        width: 100%;
+        justify-content: flex-end;
+        background-color: var(--dark);
         display: none;
+    }
+    .nav__icons li {
+        padding: 6px 6px -3px 6px;
     }
     #nav_toggle {
         display: block;
         width: 30px;
+    }
+    .active {
+        display: flex;
     }
 
 }

@@ -2,10 +2,11 @@
 @import "reset.css";
 /* Components */
 @import "components/nav.css";
+@import "components/footer.css";
 
 
 /* Screens */
-
+@import "screens/index.css";
 
 
 
@@ -14,5 +15,7 @@
 /* variables */
 :root{
     --blue : rgb(83,131,232);
-    --space : 8px 12px;
+    --dark : rgb(40,52,78);
+    --space : 0 12px;
+
 }
