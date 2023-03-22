@@ -1,0 +1,53 @@
+.nav__current__lol{
+    position: relative;
+    margin-left: 130px;
+}
+.banner {
+    display: none;
+}
+.bannerBG,
+.bannerBG::after {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bannerBG{
+    background-size: 100%;
+    background-position: 50% 30%;
+}
+
+.bannerBG::after {
+    content: "";
+    background-image: linear-gradient(180deg, rgba(60, 60, 60,0.5), rgba(0,0,0,0.5));
+}
+
+
+
+
+@media only screen and (min-width : 1075px){
+    .banner {
+        display: block;
+        position: relative;
+        height: 200px;
+        background-color: white;
+    }
+    .content{
+        position: relative;
+        max-width: 1075px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    .banner__title__img{
+        float: left;
+        margin-right: 8px;
+        height: 60px;
+    }
+    .banner__title__h1 {
+        font-size: 32px;
+        line-height: 39px;
+        color: white;
+    }
+
+}
