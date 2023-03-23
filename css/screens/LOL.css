@@ -1,6 +1,30 @@
+.game__main{
+    background-color: #ebeef1;
+}
 .nav__current__lol{
     position: relative;
     margin-left: 130px;
+}
+.nav__current__list div,
+.nav__current__name {
+    white-space: nowrap;
+}
+@media screen and (max-width : 850px){
+    .content{
+        position: relative;
+    }
+    .nav__current__list div,
+    .nav__current__name{
+        display: flex;
+        margin: 0 5%;
+        align-items: center;
+    }
+    .nav__current__name{
+        top: -4px;
+    }
+    .nav__current__name img{
+        top: 0;
+    }
 }
 .banner {
     display: none;
@@ -22,7 +46,9 @@
     content: "";
     background-image: linear-gradient(180deg, rgba(60, 60, 60,0.5), rgba(0,0,0,0.5));
 }
-
+.sidebar {
+    display: none;
+}
 
 
 
@@ -35,19 +61,143 @@
     }
     .content{
         position: relative;
+        height: 200vh;
         max-width: 1075px;
         margin: 0 auto;
         z-index: 2;
     }
     .banner__title__img{
         float: left;
-        margin-right: 8px;
+        margin-right: 15px;
         height: 60px;
     }
+    .banner__title {
+        position: relative;
+        left: 5px;
+        padding-top: 90px;
+    }
     .banner__title__h1 {
+        display: inline-block;
         font-size: 32px;
-        line-height: 39px;
+        line-height: 60px;
+        font-weight: 700;
         color: white;
     }
-
+    .sidebar {
+        display: block;
+        position: relative;
+        top: -30px;
+        width: 300px;
+        float: left;
+        z-index: 10;
+    }
+    .sidebar__inner{
+        background-color: white;
+        height: 500px;
+        box-shadow: var(--shadow);
+    }
+    /* .sidebar__ul {
+        margin: 20px;
+    } */
+    .sidebar__ul li {
+        margin: 15px 0 15px 20px;
+    }
+    .sidebar__loginBtn{
+        width: 260px;
+        height: 40px;
+        background-color: var(--blue);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 10px 0 30px;
+    }
+    .sidebar__loginBtn:hover{
+        background-color: rgb(63, 102, 187);
+        border: 2px solid var(--blue);
+    }
+    .aside__list {
+        padding: 12px 10px;
+    }
+    .aside__index{
+        position: relative;
+        left: -5px;
+        color: gray;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .aside__list{
+        width: 235px;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 8px;
+        border-radius: 5px;
+    }
+    .aside__list:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+    #content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -20px;
+        width: 730px;
+        min-width: 730px;
+        height: 50px;
+        float: left;
+        margin-left: 15px;
+        background-color: white;
+        box-shadow: var(--shadow);
+    }
+    .sub__header{
+        display: block;
+    }
+    .sub__title span{
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 25px;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .sub__title img{
+        position: absolute;
+        top: 13px;
+        right: 20px;
+    }
+    .board{
+        position: relative;
+        top: 40px;
+        color: black;
+    }
+    .commu {
+        width: 100%;
+        background-color: white;
+        height: 80px;
+        margin-bottom: 12px;
+        box-shadow: var(--shadow);
+    }
+    .board__index ul,
+    .commu ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        color: black;
+    }
+    .board__index{
+        background-color: white;
+        box-sizing: border-box;
+        padding-top: 13px;
+        height: 50px;
+        box-shadow: var(--shadow);
+        margin-bottom: 20px;
+    }
+    .commu ul {
+        position: relative;
+        top: 30px;
+    }
 }
+

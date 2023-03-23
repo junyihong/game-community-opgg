@@ -21,5 +21,6 @@
     --blue : rgb(83,131,232);
     --dark : rgb(40,52,78);
     --space : 0 12px;
+    --shadow : 0 1px 3px 0 rgba(0,0,0,.15);
 
 }

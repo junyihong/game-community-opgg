@@ -63,6 +63,7 @@ transition: 0.3s ease-in-out all;
     margin: 0 5px;
     color: white;
     font-weight: 700;
+    transition: 0.3s ease-in-out all;
 }
 .nav__icons li:hover{
     background-color: rgb(39, 64, 119);
@@ -84,8 +85,6 @@ transition: 0.3s ease-in-out all;
     background-color: var(--blue);
 }
 .nav__current__name{
-    /* position: relative;
-    margin-left: 130px; */
     display: inline-block;
     font-size: 15px;
     color: white;
