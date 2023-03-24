@@ -1,5 +1,5 @@
 .game__main{
-    background-color: #ebeef1;
+    background-color: #e1e5e9;
 }
 .nav__current__lol{
     position: relative;
@@ -61,7 +61,7 @@
     }
     .content{
         position: relative;
-        height: 200vh;
+        height: 130vh;
         max-width: 1075px;
         margin: 0 auto;
         z-index: 2;
@@ -136,13 +136,13 @@
         border-radius: 5px;
     }
     .aside__list:hover{
-        background-color: rgba(0,0,0,0.2);
+        background-color: rgb(63, 102, 187,0.3);
     }
     #content {
         position: relative;
         display: flex;
         flex-direction: column;
-        top: -20px;
+        top: -15px;
         width: 730px;
         min-width: 730px;
         height: 50px;
@@ -197,7 +197,7 @@
     }
     .commu ul {
         position: relative;
-        top: 30px;
+        top: 12px;
     }
 }
 
