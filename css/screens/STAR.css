@@ -1,0 +1,23 @@
+.nav__current__star{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6px;
+}
+@media screen and (min-width : 1075px){
+    
+    .nav__current__star {
+    margin-left: 450px;
+    bottom: 5px;
+    margin-right: 5px;
+    }
+
+
+}
+@media screen and (max-width : 850px){
+    .nav__current__star {
+        position: relative;
+        top: -10px;
+    }
+}

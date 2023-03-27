@@ -1,0 +1,135 @@
+.login__body{
+    background-color: #e1e5e9;
+}
+input:not([type="submit"]) {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+  }
+input:focus {
+    border-color: var(--blue);
+    background-color: rgba(192, 192, 192, 0.1);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 130px auto;
+    width: 30%;
+    min-width: 350px;
+    box-shadow: var(--shadow);
+}
+.container h2 {
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px auto 20px
+}
+.login__btn i {
+    font-size: 30px;
+    position: relative;
+    top: 1px;
+}
+.login__btn span {
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+}
+
+.login__id,
+.login__pw {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.login__btn {
+    background-color: rgb(189, 189, 189);
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    height: 50px;
+    transition: 0.3s ease-in-out;
+}
+.login__btn:hover {
+    background-color: var(--blue);
+}
+.facebook__btn{
+    background-color: rgb(60,90,150);
+}
+.apple__btn{
+    background-color: rgb(33,37,41);
+}
+.login__or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.login__or span{
+    display: inline-block;
+    background-color: white;
+    padding: 3px 20px;
+    position: relative;
+    top: 15px;
+    font-weight: 700;
+}
+.easy__login {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+.id{
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.pw{
+    display: inline-block;
+    margin: 5px;
+    font-weight: 700;
+}
+.forgot__box{
+    position: relative;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.forgot__pw{
+    color: var(--blue);
+    position: absolute;
+    right: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Quest__box{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.isFirst{
+    display: inline-block;
+    font-size: 16px;
+}
+.gotoSignup {
+    color: var(--blue);
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+}

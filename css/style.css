@@ -3,10 +3,11 @@
 /* Components */
 @import "components/nav.css";
 @import "components/footer.css";
-
+@import "components/sidebar.css";
 
 /* Screens */
 @import "screens/index.css";
+@import "screens/login.css";
 @import "screens/LOL.css";
 @import "screens/TFT.css";
 @import "screens/PUBG.css";

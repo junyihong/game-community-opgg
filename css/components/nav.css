@@ -127,13 +127,12 @@ transition: 0.3s ease-in-out all;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 140px;
-        padding-top: 20px;
+        height: 22vh;
+        padding-top: 10px;
         display: none;
     }
     .nav__lists div {
         padding: 5px 10px;
-        margin: 3px;
     }
     .nav__icons{
         width: 100%;
@@ -150,6 +149,12 @@ transition: 0.3s ease-in-out all;
     }
     .active {
         display: flex;
+    }
+    .nav__current{
+        display: none;
+    }
+    .nav__list div{
+        padding:0;
     }
 
 }

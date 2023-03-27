@@ -1,0 +1,7 @@
+.affixed {
+    position: fixed;
+    top: 0;
+    float: left;
+    width: 300px;
+    transform: translate3d(0px, 0px, 0px);
+}
