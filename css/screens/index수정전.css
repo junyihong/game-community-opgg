@@ -1,0 +1,108 @@
+.index__body{
+    position: relative;
+}
+.index__main{
+    background-color:#33383c;
+}
+.index__contentBox {
+    padding: 50px 0 50px;
+    background-color: #33383c;
+    overflow: hidden;
+
+}
+.index__title {
+    width: 400px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    background-color: #ffffff3e;
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+.index__content{
+    position: relative;
+    padding-top: 30px;
+    max-width: 1080px;
+    height: 65vh;
+    margin: 0 auto;
+}
+.game__list__item {
+    float: left;
+    margin-left: 16px;
+    margin-top: 16px;
+    width: 514px;
+    height: 240px;
+    overflow: hidden;
+
+}
+.game__background{
+    position: relative;
+    width: 530px;
+    height: 240px;
+    background-size: cover;
+    background-position: 50%;
+    transition:  0.5s ease-in-out ;
+}
+
+
+.game__title{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    z-index: 2;
+}
+.game__background::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent, #000000a2);
+    content: "";
+}
+.game__background:hover h2{
+    color: var(--blue);
+}
+@media only screen and (max-width : 1075px){
+    .index__main{
+        padding : 18px 16px 80px;
+    }
+    .index__title{
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game__list {
+        margin-top: 16px;
+        margin-left: -10px;
+    }
+    .game__list__item{
+        width: 100%;
+        margin-top: 16px;
+        color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .game__background{
+        background-position-y: 22%;
+        width: 100%;
+        height: 200px;
+    }
+    .index__contentBox{
+        padding: 10px 0 50px;
+    }
+    .index__content{
+        padding-top: 0;
+    }
+}
+
+
