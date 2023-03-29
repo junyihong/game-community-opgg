@@ -3,8 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ::view-transition-old(root),
+        ::view-transition-new(root) {
+            animation-duration: 5s;
+        }
+    </style>
+    <meta name="view-transition" content="same-origin">
     <title>junyihong - Green</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/jquery-3.6.3.min.js"></script>
@@ -115,8 +120,8 @@
                 <div class="sub__header">
                     <div class="sub__title">
                         <span>공략게시판</span>
-                        <img src="https://talk.op.gg/images/icon-write@2x.png" style="width:
-                        24px;">
+                        <a href="innerLOL.html"> <img src="https://talk.op.gg/images/icon-write@2x.png" style="width:
+                            24px;"></a>
                     </div>
                 </div>
                 <div class="board">

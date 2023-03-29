@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>junyihong - Green</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/screens/sign-up.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <script src="../js/jquery-3.6.3.min.js"></script>
 </head>
 <body class="sign-up__body">
@@ -15,45 +17,45 @@
         
 		<form action="../index.html" method="post" class="sign__form">
             <div class="group">      
-                <input type="text" required class="email">
+                <input type="text" required class="email signinput">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>이름</label>
               </div>
               <div class="group">      
-                <input type="text" required class="email">
+                <input type="text" required class="email signinput">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>주민등록번호 / (-)제외</label>
               </div>
               <div class="group">      
-                <input type="text" class="pw" required>
+                <input type="text" class="pw signinput" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>이메일 / 아이디</label>
               </div>
 
               <div class="group">      
-                <input type="text" required class="email">
+                <input type="text" required class="email signinput">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>비밀번호</label>
               </div>
               <div class="group">      
-                <input type="text" required class="email">
+                <input type="text" required class="email signinput">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>비밀번호 확인</label>
               </div>
 
               <div class="group">      
-                <input type="text" required class="email">
+                <input type="text" required class="email signinput">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>휴대전화</label>
               </div>
               <div class="gainjungbo">
-                <input type="checkbox" class="normal_input">&nbsp;개인정보취급 약관 동의
+                <input type="checkbox" id="normal">&nbsp;개인정보취급 약관 동의
             </div>
 
 			

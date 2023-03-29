@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 .container__sign-up h2 {
-  color: var(--blue);
+  color: rgb(83,131,232);
   font-size: 50px;
   font-weight: 700;
   margin: 20px auto 20px
@@ -26,7 +26,7 @@
   position:relative; 
   margin-bottom:45px; 
 }
-input 				{
+.signinput 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -34,7 +34,7 @@ input 				{
   border:none;
   border-bottom:1px solid #757575;
 }
-input:focus 		{ outline:none; }
+
 
 /* LABEL ======================================= */
 label 				 {
@@ -92,7 +92,11 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   pointer-events:none;
   opacity:0.5;
 }
+#normal{
+  position: relative;
 
+  right: 0;
+}
 /* active state */
 input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
@@ -124,4 +128,24 @@ input:focus ~ .highlight {
 }
 .sign__form{
   width: 80%;
+}
+
+.login__btn {
+  background-color: rgb(189, 189, 189);
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  height: 50px;
+  transition: 0.3s ease-in-out;
+}
+.login__btn:hover {
+  background-color: rgb(83,131,232);
 }

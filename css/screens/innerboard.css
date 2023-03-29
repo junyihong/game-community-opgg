@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+.bluebtn {
+    background-color: var(--blue);
+    border: none;
+    padding: 12px 8px;
+    width: 30%;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.bluebtn:hover {
+    background-color: rgb(62, 97, 171);
+}
+.innersidebar{
+    height: 650px;
+}
+.sidebarSecBtns{
+    margin-bottom: 40px;
+}
+.sub__writeSelect{
+    position: relative;
+    top: 25px;
+    left: 25px;
+}
+.writeSelect {
+  appearance: none;
+  font-family: "Noto Sansf KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444;
+  background-color: #fff;
+  padding: .6em 1.4em .5em .8em;
+  margin: 0;
+  border: 1px solid #aaa;
+  border-radius: .5em;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+}
+.writeSelect:hover {
+  border-color: #888;
+}
+.writeSelect:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+.writeSelect:disabled {
+  opacity: 0.5;
+}
+.inner-sub__header{
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+}
+.writeTitle {
+    position: relative;
+    top: 40px;
+    left: 25px;
+    width: 94%;
+}
+#write-title {
+    border:1px solid #aeaeaebf;
+    padding-left: 20px;
+    height: 40px;
+    width: 96%;
+}
+.filebox{
+    position: relative;
+    top: 50px;
+    width: 95%;
+    left: 25px;
+}
+.filebox .upload-name {
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #aeaeaebf;
+    width: 78%;
+    color: #999999;
+}
+#filelabel {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #999999;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#filelabel:hover{
+    background-color: var(--blue);
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    border: 0;
+}
+
+.innerTextarea {
+    position: relative;
+    left: 25px;
+    width: 680px;
+    height: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aeaeaebf;
+    border-radius: 5px;
+    font-size: 16px;
+    resize:none;
+}
+.writeArea{
+    height: 600px;
+    position: relative;
+    top: -5px;
+}
+.selectbar{
+    display: flex;
+    position: relative;
+    top: 7px;
+    z-index: 3;
+    left: 25px;
+    width: 678px;
+    border: 1px solid #aeaeaebf;
+    background-color: white;
+}
+.innerTextarea:focus{
+    border: 1px solid #aeaeaebf; 
+    outline: none;
+}
+.innerTextarea::placeholder{
+    padding-top: 200px;
+}
+.selectbar button {
+    background-color: white;
+    border: none;
+    border-left: 1px solid #aeaeaebf;
+    padding:0 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    font-size: 12px;
+}
+.selectbar button:hover {
+    background-color: gray;
+}
+.selectbar button:first-child{
+    border: none;
+}
+.innerContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 730px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+@media only screen and (min-width : 1075px){
+    .innerContent {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -15px;
+        width: 730px;
+        min-width: 730px;
+        height: 100vh;
+        float: right;
+        margin-left: 15px;
+        background-color: white;
+        box-shadow: var(--shadow);
+    }    
+}
+.imgThum {
+    position: relative;
+    top: -40px;
+    left: 25px;
+}
+input#check_btn{
+    display:none;
+    }
+  
+  input#check_btn + label{
+    cursor:pointer;
+   }
+  
+  input#check_btn label{
+    vertical-align: middle;
+    margin-left: 15px;
+   }
+  
+  input#check_btn + label:before{
+    content:"";
+    display:inline-block;
+    width:17px;
+    height:17px;
+    border:2px solid rgb(0, 218, 145);
+    border-radius: 9px;
+    vertical-align:middle;
+    }
+    
+  /* label:before에 체크 된 상태 CSS */  
+  input#check_btn:checked + label:before{
+    content:"";
+    background-color:rgb(0, 218, 145);
+    border-color:rgb(0, 218, 145);
+    background-image: url('check_btn.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    }
+    .finishWrite{
+        display: flex;
+        position: relative;
+        top: -10px;
+        left: 25px;
+        width: 93% ;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .innerbtn{
+        background-color: var(--blue);
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .white{
+        background-color: white;
+        color: rgb(123, 122, 122);
+        border: 1px solid #aeaeaebf;
+    }

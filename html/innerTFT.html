@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        ::view-transition-old(root),
+        ::view-transition-new(root) {
+            animation-duration: 5s;
+        }
+    </style>
+    <meta name="view-transition" content="same-origin">
+    <title>junyihong - Green</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav-bar">
+            <div id="nav__logo" style="background-color: rgb(40,52,78);">
+                <p>
+                    <a href="../index.html"><span id="logo__span1">OP.GG</span>
+                        <span id="logo__span2">TALK</span></a>
+                </p>
+            </div>
+            <div class="nav__lists">
+                <div >
+                    <div>
+                        <a href="LOL.html">리그오브레전드</a>
+                    </div>
+                </div>
+                <div class="current__painter" style="background-color: var(--blue)">
+                    <div><a href="TFT.html">TFT-롤토체스</a></div>
+                </div>
+                <div>
+                    <div><a href="PUBG.html">배틀그라운드</a></div>
+                </div>
+                <div>
+                    <div><a href="STAR.html">스타크래프트</a></div>
+                </div>
+                
+            </div>
+            <ul class="nav__icons">
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="sign-up.html">회원가입</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" id="nav_toggle"></i>
+        </div>
+        <div class="nav__current">
+            <a href="TFT.html">
+                <div class="nav__current__name nav__current__tft"><img src="https://talk.op.gg/images/game/icon-community-lol.png" width="20px" height="20px">
+                Team-Fight-Tactics
+                </div>
+            </a>
+            <div class="nav__current__list">
+                <a href="TFT-free.html"><div>자유게시판</div></a>
+                <a href="TFT-gong.html"><div>공략게시판</div></a>
+                <a href="TFT-video.html"><div>영상게시판</div></a>
+                <a href="TFT-find.html"><div>유저찾기</div></a>
+            </div>
+        </div>
+    </header>
+
+        <main class="game__main">
+            <div class="banner lol__banner">
+                <div class="bannerBG lol__bannerBG"
+                    style="
+                    border : 0.5px solid gray; 
+                    background-image: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfe81204b8ec63e0e/5e6184a918d3347ceffbbd6d/TFT.S3_GALAXIES.ARTICLE-2.jpg');
+                    background-position-y: 25%;
+                    ">
+                    <div class="content lolcontent">
+                        <div class="banner__title">
+                            <img src="https://talk.op.gg/images/game/icon-community-lol.png" class="banner__title__img">
+                            <h1 class="banner__title__h1">전략적 팀 전투</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <div class="sidebar__inner">
+                        <ul class="sidebar__ul">
+                            <li><button class="sidebar__loginBtn">로그인</button></li>
+                            <li class="aside__index">홈</li>
+    
+                            <a href="TFT.html">
+                                <li class="aside__list">전체</li>
+                            </a>
+    
+                            <li class="aside__index">정보</li>
+    
+                            <a href="TFT-gong.html">
+                                <li class="aside__list">공략 게시판</li>
+                            </a>
+    
+                            <li class="aside__index">커뮤니티</li>
+    
+                            <a href="TFT-free.html">
+                                <li class="aside__list">자유 게시판</li>
+                            </a>
+                            <a href="TFT-video.html">
+                                <li class="aside__list">영상 게시판</li>
+                            </a>
+                            <a href="TFT-find.html">
+                                <li class="aside__list">유저 찾기</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="innerContent">
+                    <div class="sub__header inner-sub__header">
+                        <div class="sub__title">
+                            <span>글쓰기</span>
+                            <img src="https://talk.op.gg/images/icon-write@2x.png" style="width:
+                            24px;">
+                        </div>
+                        <div class="sub__writeSelect">
+                            <select name="게시판 선택" class="writeSelect">
+                                <option value="">-- 게시판 선택 --</option>
+                                <option value="free">자유게시판</option>
+                                <option value="gong">공략게시판</option>
+                                <option value="video">영상게시판</option>
+                                <option value="find">유저찾기</option>
+                              </select>
+                        </div>
+                        <div class="writeTitle">
+                            <input type="text" placeholder="제목" id="write-title">
+                        </div>
+                        <div class="filebox">
+                            <input class="upload-name" value="" placeholder="첨부파일">
+                            <label for="file" id="filelabel">파일찾기</label> 
+                            <input type="file" id="file">
+                        </div>
+                    </div>
+                    <div class="writeArea">
+                        <div class="selectbar">
+                            <button><i class="fa-solid fa-h"></i></button>
+                            <button><i class="fa-solid fa-bold"></i></button>
+                            <button><i class="fa-solid fa-italic"></i></button>
+                            <button><i class="fa-solid fa-brush"></i></button>
+                            <button><i class="fa-solid fa-delete-left"></i></button>
+                            <button><i class="fa-solid fa-calendar-days"></i></button>
+                            <button><i class="fa-regular fa-face-smile"></i></button>
+                            <button><i class="fa-solid fa-book"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-regular fa-compass"></i></button>
+                            <button><i class="fa-solid fa-earth-americas"></i></button>
+                            <button><i class="fa-brands fa-codepen"></i></button>
+                            <button><i class="fa-regular fa-sun"></i></button>
+                            <button><i class="fa-regular fa-clock"></i></button>
+                            <button><i class="fa-regular fa-credit-card"></i></button>
+                            <button><i class="fa-solid fa-power-off"></i></button>
+                            <button><i class="fa-regular fa-closed-captioning"></i></button>
+                        </div>
+                        <textarea class="innerTextarea" placeholder="불법촬영물등을 게재할 경우 전기통신사업법 제22조의5제1항에 따라 삭제·접속차단 등의 조치가 취해질 수 있으며 관련 법률에 따라 처벌받을 수 있습니다."></textarea>
+                    </div>
+                    <div class="imgThum">
+                        <input type="checkbox" id="check_btn">
+                        <label for="check_btn">&nbsp;&nbsp;&nbsp;이미지 미리보기 허용</label>
+                    </div>
+                    <div class="finishWrite">
+                        <button class="innerbtn white">취소</button>
+                        <a href="TFT.html"><button class="innerbtn">작성완료</button></a>
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__ul__con">
+                <ul class="footer__ul">
+                    <li>회사소개</li>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>청소년 보호정책</li>
+                    <li>제휴</li>
+                    <li>문의/피드백</li>
+                    <li>채용</li>
+                </ul>
+            </div>
+
+            <div class="footer__contents">
+                <span class="footer__logo">OP.GG</span>
+                <p>
+                    서울특별시 강남구 테헤란로 507 1층, 2층 <br>
+                    Tel: 02)123-1234 / Fax: 02) 123-1234 <br>
+                    (주)오피지지 사업자등록번호 : 123-12-123456
+                    <br>
+                    <br>
+                    &copy; OP.GG. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

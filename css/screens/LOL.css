@@ -160,7 +160,7 @@
     }
     .sidebar__inner{
         background-color: white;
-        height: 500px;
+        height: 550px;
         box-shadow: var(--shadow);
     }
     /* .sidebar__ul {
