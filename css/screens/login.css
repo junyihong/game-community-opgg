@@ -58,8 +58,8 @@
 .login__btn:hover {
     background-color: var(--blue);
 }
-.facebook__btn{
-    background-color: rgb(60,90,150);
+.facebook__btn:hover{
+    background-color: rgb(92, 128, 200);
 }
 .apple__btn{
     background-color: rgb(33,37,41);
@@ -126,4 +126,12 @@
 .normal_input{
     width: inherit;
     display:inline;
+}
+.Loginput{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:95%;
+    border:none;
+    border-bottom:1px solid #757575;
 }

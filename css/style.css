@@ -4,6 +4,7 @@
 @import "components/nav.css";
 @import "components/footer.css";
 @import "components/sidebar.css";
+@import "components/button.css";
 
 /* Screens */
 @import "screens/index.css";
